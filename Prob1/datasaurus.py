@@ -1,3 +1,4 @@
+import matplotlib.pyplot as plt
 import numpy as np
 import csv
 
@@ -19,10 +20,34 @@ for elem in imagenes:
         reader = csv.reader(f, delimiter='\t') 
         for row in reader:
             if(elem==row[0]):
-                listaP.append((row[1], row[2]))
+                listaP.append([float(row[1]), float(row[2])])
         Dicimagenes[elem] = listaP
-print(Dicimagenes)
-    
 
-with open('Prob1\problema1\DatasaurusDozen.tsv', 'r') as f:
-    reader = csv.reader(f, delimiter='\t') 
+
+#Impresion del Dino    
+plt.figure()
+
+x = []
+y = []
+for point in Dicimagenes['dino']:
+    x.append(point[0])
+    y.append(point[1])
+
+plt.scatter(x,y)
+
+plt.show()
+
+del Dicimagenes['dino']
+#Impresion de las demas imagenes
+plt.figure()
+
+for i, img in enumerate(Dicimagenes):
+    plt.subplot(3,4,i+1)
+    x = []
+    y = []
+    for point in Dicimagenes[img]:
+        x.append(point[0])
+        y.append(point[1])
+    plt.scatter(x,y)
+
+plt.show()
