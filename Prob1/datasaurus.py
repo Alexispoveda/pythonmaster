@@ -32,10 +32,12 @@ y = []
 for point in Dicimagenes['dino']:
     x.append(point[0])
     y.append(point[1])
-
 plt.scatter(x,y)
+plt.title('Dino')
+plt.xlabel('X')
+plt.ylabel('Y')
 
-plt.show()
+#plt.show()
 
 del Dicimagenes['dino']
 #Impresion de las demas imagenes
@@ -49,5 +51,8 @@ for i, img in enumerate(Dicimagenes):
         x.append(point[0])
         y.append(point[1])
     plt.scatter(x,y)
-
+    plt.title(img)
+    plt.xlabel('X')
+    plt.ylabel('Y')
+plt.subplots_adjust(wspace=0.5, hspace=0.5)
 plt.show()
