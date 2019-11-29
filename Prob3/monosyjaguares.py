@@ -5,20 +5,20 @@ from scipy.integrate import odeint
 plt.close('all')
 
 #Definicion de Tiempo
-a = 1
-b = 1
-c = 1
-d = 1
+a = 1.1
+b = 0.4
+c = 0.1
+d = 0.4
 
 #Ecuaciones Simultaneas
 def dP_dt(P, t):
     return [P[0]*(a - b*P[1]), -P[1]*(c - d*P[0])]
 
 #Definicion de Tiempo (pasos de solucion de la ecuacion)
-ts = np.linspace(0, 36, 100)
+ts = np.linspace(0, 60, 500)
 
 #Valores poblacionales iniciales (presas y predadores)
-P0 = [1.5, 1.0]
+P0 = [10, 11]
 
 #Resulucion matematica del modelo
 Ps = odeint(dP_dt, P0, ts)

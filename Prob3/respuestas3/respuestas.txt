@@ -1,0 +1,37 @@
+1. 10 veces mas presas que predadores
+
+Cuando hay 10 veces mas presas que predadores 
+se observa como los predadores tienen mas recursos
+causando que su poblacion crezca hasta un punto 
+en que supera a la de las presas causando que la 
+poblacion de presas disminuya. Al disminuir la 
+poblacion de presas los predadores dejan de tener
+comida causando que su poblacion tambien disminuya. 
+Esto repitiendose en ciclos. 
+
+2. Valor inicial de las presas 0
+
+Al haber 0 presas esto indica que los predadores no 
+tendran comida por lo que moriran rapidamente.
+
+3. Valor inicial de los predadores 0
+
+Al haber 0 predadores, las presas no tendran ningun
+agente que limite el crecimiento de su poblacion. 
+Por lo que se disparara. 
+
+4. Cuando b = 10
+
+Podemos ver que al aumentar la tasa de interaccion 
+entre presas y deperedadores al inicio mueren  rapido las
+presas. Causando que al poco tiempo mueran tambien los predadores
+ya que no tienen alimento. Al morir estos causa un rapido crecimiento
+en la poblacion de presas. Pero al haber una interaccion rapida
+crece solo un poco los predadores pero estos pocos acaban 
+rapidamente con la poblacion de presas y se repite el ciclo.
+
+5. Cuando c = 5
+
+Al aumentar la tasa de perdida de deperedadores estos disminuyen por
+falta de alimento y tambien por muerte natural, lo que hace que las presas
+nunca desaparezcan y los ciclos de se repitan más rápido.
